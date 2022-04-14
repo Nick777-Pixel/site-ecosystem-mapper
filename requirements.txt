@@ -1,0 +1,7 @@
+streamlit
+requests
+pandas
+bs4
+lxml
+altair
+graphistry

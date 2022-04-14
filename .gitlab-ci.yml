@@ -1,0 +1,23 @@
+image: "python:3.8-slim-buster"
+
+before_script:
+  - pip install -r requirements.txt
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  only:
+    - master
+  before_script:
+    - apt-get update -y
+    - apt-get install -y git
+    - apt-get install -y curl
+  script:
+    - apt-get install git -yqq
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    # The --app argument determines the URL, i.e. smat-staging.herokuapp.com
+    - dpl --provider=heroku --app=site-ecosystem-mapper --api-key=$HEROKU_API_KEY --cleanup
