@@ -35,7 +35,7 @@ st.markdown(
  determine what media ecosystem a site is a part of especially in studying\
   disinformation or conspiracies. It may take a \
  while if there are a lot of links but you'll see the running logo in the top.\
- This project is a part of the Social Media Analysis Toolkit or [Appmuno](https://appmuno.com/)."
+ This project is a part of the Social Media Analysis Toolkit."
  )
 
 
