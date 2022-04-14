@@ -35,13 +35,12 @@ st.markdown(
  determine what media ecosystem a site is a part of especially in studying\
   disinformation or conspiracies. It may take a \
  while if there are a lot of links but you'll see the running logo in the top.\
- You can look at the code on [Gitlab](https://gitlab.com/smat-project/site-ecosystem-mapper/).\
- This project is a part of the Social Media Analysis Toolkit or [SMAT](https://smat-streamlit.herokuapp.com/)."
+ This project is a part of the Social Media Analysis Toolkit or [Appmuno](https://appmuno.com/)."
  )
 
 
 
-sourceBaseURL = st.text_input("site (use format: 'infowars.com')", value='infowars.com')
+sourceBaseURL = st.text_input("site (use format: 'thegrayzone.com')", value='thegrayzone.com')
 st.markdown('The starting URL often has many more links than any other which can skew the graphs.')
 graph_source_URL = st.radio("Include starting URL in graph?", ('no', 'yes'))
 st.markdown("This app starts with a URL then crawls outward from the links on the starting point.\
